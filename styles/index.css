@@ -1,0 +1,223 @@
+/*index.css*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+body{
+	background-color: rgba(6, 6, 6, 0.1);
+}
+
+.container{
+	width: 1001px;
+	margin: 17px auto 0px;
+}
+
+/*navigation start*/
+.nav{
+	width: 20%;
+	float: left;
+}
+
+.lineWidth, .graphics{
+	width: 100%;
+	height: 199px;
+
+	border: 1px solid #00a38b;
+	border-right:none;
+	border-bottom: none;
+}
+
+/*lineWidth start*/
+.div_1, .div_2, .div_3, .div_4, .div_5{
+	width: 100%;
+	height: 40px;
+	background-color: #F5F6F7;
+
+	position: relative;
+}
+
+.div_5{
+	border-bottom: 1px solid #00a38b;
+}
+
+.line_1, .line_2, .line_3, .line_4, .line_5{
+	width: 80%;
+	background-color: #000;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.line_1{
+	height: 1px;
+}
+
+.line_2{
+	height: 2px;
+}
+
+.line_3{
+	height: 4px;
+}
+
+.line_4{
+	height: 6px;
+}
+
+.line_5{
+	height: 8px;
+}
+/*lineWidth end*/
+
+/*graphics start*/
+.pointLine, .drawLine{
+	height: 99px;
+	
+	float: left;
+	
+	border-bottom: 1px solid rgba(0, 163, 139, .2);
+}
+
+.pointLine{
+	width: 99px;
+
+	border-right: 1px solid rgba(0, 163, 139, .2);
+}
+
+.drawLine{
+	width: 99px;
+}
+
+.fillRect, .fillArc{
+	height: 99px;
+
+	float: left;
+}
+
+.fillRect{
+	width: 99px;
+
+	border-right: 1px solid rgba(0, 163, 139, .2);
+}
+
+.fillArc{
+	width: 99px;
+}
+
+.pointLine, .drawLine, .fillArc, .fillRect{
+	position: relative;
+}
+
+.graphics img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+.cover{
+	position: absolute;
+	z-index: 1;
+
+	width: 99px;
+	height: 99px;
+/*	background-color: rgba(6, 6, 6, .1);*/
+}
+/*graphics end*/
+
+.colors{
+	width: 100%;
+	height: 198px;
+	background-color: #F5F6F7;
+
+	border: 1px solid #00a38b;
+	border-right: none;
+}
+
+/*colors start*/
+.red, .green, .blue, .pink, .orange, .yellow{
+	width: 66px;
+	height: 66px;
+	float: left;
+
+	position: relative;
+}
+
+.red{
+	background-color: #F00;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.green{
+	background-color: #0F0;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.blue{
+	background-color: #00F;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.pink{
+	background-color: pink;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.orange{
+	background-color: orange;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.yellow{
+	background-color: yellow;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.colors .cover{
+	width: 66px;
+	height: 66px;
+
+	position: absolute;
+}
+
+.erase{
+	width: 100%;
+	height: 64px;
+	background-color: rgba(0, 163, 139, .2);
+
+	text-align: center;
+	line-height: 64px;
+
+	font-size: 20px;
+}
+
+
+/*colors end*/
+
+/*navigation end*/
+
+.content{
+	width: 80%;
+	float: left;
+}
+
+#myCanvas{
+	display: block;
+
+	background-color: #CCC;
+
+	cursor:pointer
+}

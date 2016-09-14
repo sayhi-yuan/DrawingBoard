@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DrawingBoard</title>
+	<link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav">
+			<div class="lineWidth">
+				<div class="div_1">
+					<div class="line_1"></div>
+				</div>
+				<div class="div_2">
+					<div class="line_2"></div>
+				</div>
+				<div class="div_3">
+					<div class="line_3"></div>
+				</div>
+				<div class="div_4">
+					<div class="line_4"></div>
+				</div>
+				<div class="div_5">
+					<div class="line_5"></div>
+				</div>
+			</div>
+			<div class="graphics">
+				<div class="pointLine">
+					<img src="./images/pointLine.png" alt="">
+					<div class="cover"></div>
+				</div>
+				<div class="drawLine">
+					<img src="./images/drawLine.png" alt="">
+					<div class="cover"></div>
+				</div>
+				<div class="fillRect">
+					<img src="./images/fillRect.png" alt="">
+					<div class="cover"></div>
+				</div>
+				<div class="fillArc">
+					<img src="./images/fillArc.png" alt="">
+					<div class="cover"></div>
+				</div>
+			</div>
+			<div class="colors">
+				<div class="red"><div class="cover"></div></div>
+				<div class="green"><div class="cover"></div></div>
+				<div class="blue"><div class="cover"></div></div>
+				<div class="pink"><div class="cover"></div></div>
+				<div class="orange"><div class="cover"></div></div>
+				<div class="yellow"><div class="cover"></div></div>
+				<div class="clear"><div class="cover"></div></div>
+				<div class="erase">整屏擦除</div>
+			</div>
+		</div>
+		<div class="content">
+			<canvas id="myCanvas" width="800" height="600"></canvas>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<script src="./libs/jquery-2.1.3.js"></script>
+	<script src="./scripts/init.js"></script>
+	<script src="./scripts/selectLine.js"></script>
+	<script src="./scripts/selectGraphics.js"></script>
+	<script src="./scripts/selectColor.js"></script>
+	<script src="./scripts/drawing.js"></script>
+	<script src="./scripts/clearCanvas.js"></script>
+</body>
+</html>
